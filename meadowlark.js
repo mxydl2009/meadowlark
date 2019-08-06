@@ -1,5 +1,6 @@
 // 入口文件
 let express = require('express');
+let forturne = require('./lib/fortune.js');
 // 创建应用实例
 let app = express();
 // 引入handlebars视图引擎，create()方法创建handlebars实例来注册应用的引擎
@@ -9,14 +10,6 @@ app.set('view engine', 'handlebars');
 
 app.set('port', process.env.PORT || 3000);
 
-let fortunes = [
-	"Conquer your fears or they will conquer you.",
-	'Rivers need spring.',
-	"Do not fear what you don't know.",
-	'You will have a pleasant surprise.',
-	'Whenever possible, keep it simple.'
-];
-
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
@@ -24,7 +17,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/about', (req, res) => {
-	let randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
+	let randomFortune = fortunes.getFortune();
 	res.render('about', {fortune: randomFortune});
 })
 
