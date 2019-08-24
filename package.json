@@ -2,7 +2,7 @@
   "name": "meadowlark",
   "version": "1.0.0",
   "description": "a practise for node and express project, a web app for tourists",
-  "main": "meadowlark.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha -u tdd -R spec ./qa/tests-unit.js"
   },
