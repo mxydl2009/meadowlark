@@ -4,6 +4,7 @@
   "description": "a practise for node and express project, a web app for tourists",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "mocha -u tdd -R spec ./qa/tests-unit.js"
   },
   "keywords": [
