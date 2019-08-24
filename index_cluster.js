@@ -21,5 +21,5 @@ if (cluster.isMaster) {
         startWorker();
     });
 } else {
-    require('./meadowlark.js')();
+    require('./index.js')();
 }
