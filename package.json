@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "grunt": "^0.4.1",
+    "grunt": "^1.5.2",
     "grunt-cafe-mocha": "^0.1.13",
     "grunt-contrib-cssmin": "^3.0.0",
     "grunt-contrib-jshint": "^0.11.3",
