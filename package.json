@@ -46,7 +46,7 @@
     "grunt-exec": "^3.0.0",
     "grunt-hashres": "^0.4.1",
     "loadtest": "^3.0.7",
-    "mocha": "^6.2.0",
+    "mocha": "^10.2.0",
     "pug": "^2.0.4",
     "restler": "^3.4.0",
     "zombie": "^6.1.4"
